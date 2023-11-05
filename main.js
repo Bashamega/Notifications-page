@@ -56,7 +56,7 @@ const data = {
   }
 
 
-document.getElementById("number").innerHTML = jsonData.unread
+document.getElementById("number").innerHTML = data.unread
 data.messages.forEach(element => {
   const container = document.createElement('div')
   container.classList.add("message")
