@@ -55,10 +55,9 @@ const data = {
 ]
   }
 
-const jsonData = JSON.parse(data);
-console.log(jsonData) 
+
 document.getElementById("number").innerHTML = jsonData.unread
-jsonData.messages.forEach(element => {
+data.messages.forEach(element => {
   const container = document.createElement('div')
   container.classList.add("message")
   if(element.unread){
